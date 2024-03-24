@@ -1,2 +1,2 @@
-# greeting
+# Greeting
 AWS test deploy
