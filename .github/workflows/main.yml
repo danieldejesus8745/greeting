@@ -37,7 +37,7 @@ jobs:
 
       - name: Build, tag, and push image to Amazon ECR
         env:
-          ECR_REPOSITORY: 813165177829.dkr.ecr.us-east-1.amazonaws.com/greeting_repo
+          ECR_REPOSITORY: 813165177829.dkr.ecr.us-east-1.amazonaws.com/greeting_repo/greeting
           IMAGE_TAG: latest
           AWS_ACCOUNT_ID: 813165177829
           AWS_REGION: us-east-1
