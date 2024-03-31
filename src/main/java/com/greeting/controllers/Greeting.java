@@ -13,11 +13,7 @@ public class Greeting {
 
     @GetMapping
     public String greeting() {
-        try {
-            return "HELLO FROM: " + InetAddress.getLocalHost().getHostName();
-        } catch (UnknownHostException exception) {
-            return "Error when trying get HOSTNAME";
-        }
+        return "NEW HELLO";
     }
 
 }
