@@ -1,11 +1,11 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:813165177829:task-definition/GreetingTaskDefinition:7",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:813165177829:task-definition/DanielGreetingTaskDefinition:2",
   "containerDefinitions": [
     {
       "name": "greeting_container",
       "image": "813165177829.dkr.ecr.us-east-1.amazonaws.com/greeting:latest",
-      "cpu": 1024,
-      "memory": 3072,
+      "cpu": 512,
+      "memory": 1024,
       "memoryReservation": 1024,
       "portMappings": [
         {
@@ -25,11 +25,11 @@
       "systemControls": []
     }
   ],
-  "family": "GreetingTaskDefinition",
+  "family": "DanielGreetingTaskDefinition",
   "taskRoleArn": "arn:aws:iam::813165177829:role/ecsTaskExecutionRole",
   "executionRoleArn": "arn:aws:iam::813165177829:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
-  "revision": 7,
+  "revision": 2,
   "volumes": [],
   "status": "ACTIVE",
   "requiresAttributes": [
@@ -60,13 +60,13 @@
   "requiresCompatibilities": [
     "FARGATE"
   ],
-  "cpu": "1024",
-  "memory": "3072",
+  "cpu": "512",
+  "memory": "1024",
   "runtimePlatform": {
     "cpuArchitecture": "X86_64",
     "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2024-03-30T19:40:53.900Z",
-  "registeredBy": "arn:aws:iam::813165177829:root",
+  "registeredAt": "2024-03-31T15:05:20.272Z",
+  "registeredBy": "arn:aws:iam::813165177829:user/terraform",
   "tags": []
 }
