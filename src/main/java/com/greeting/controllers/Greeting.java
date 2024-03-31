@@ -14,7 +14,7 @@ public class Greeting {
     @GetMapping
     public String greeting() throws UnknownHostException {
         try {
-            return "Hello World from: " + InetAddress.getLocalHost().getHostName();
+            return "HELLO FROM: " + InetAddress.getLocalHost().getHostName();
         } catch (UnknownHostException exception) {
             return "Error when trying get HOSTNAME";
         }
