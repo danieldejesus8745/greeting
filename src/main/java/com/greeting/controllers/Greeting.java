@@ -12,7 +12,7 @@ import java.net.UnknownHostException;
 public class Greeting {
 
     @GetMapping
-    public String greeting() throws UnknownHostException {
+    public String greeting() {
         try {
             return "HELLO FROM: " + InetAddress.getLocalHost().getHostName();
         } catch (UnknownHostException exception) {
